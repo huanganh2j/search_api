@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 * Author:an.huang
 * Date:2018/3/26
 */
-@RestController
-@RequestMapping("/es")
+//@RestController
+//@RequestMapping("/es")
 public class EsController {
     @Autowired
     private TransportClient client;

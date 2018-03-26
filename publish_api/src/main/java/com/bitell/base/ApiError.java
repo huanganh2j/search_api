@@ -18,9 +18,9 @@ public class ApiError {
     public static final int OK=100;
     public static final String OK_MESSAGE="成功";
 
-    //-------------------------身份验证错误码-----------------100-130
-    public static final int AUTHORIZATION_HAS_EXPIRED = 101;   //授权过期，请刷新授权
-    public static final String AUTHORIZATION_HAS_EXPIRED_MESSAGE = "授权过期，请刷新授权";   //授权过期，请刷新授权
+    //-------------------------新增相关错误码-----------------100-130
+    public static final int ADD_FAILD = 101;   //新增失败
+    public static final String ADD_FAILD_MESSAGE = "新增失败";   //新增失败
     public static final int USER_NOT_EXIST = 102;   //用户不存在，请先注册
     public static final String USER_NOT_EXIST_MESSAGE = "用户不存在，请先注册";   //用户不存在，请先注册
     public static final int USER_NOT_LOGGED = 103;   //用户尚未登录，身份验证失败

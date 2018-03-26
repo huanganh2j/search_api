@@ -21,7 +21,7 @@
 
         <!-- jdbc 連接配置 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/conten_cneter?useUnicode=true&amp;characterEncoding=utf-8"
+                        connectionURL="jdbc:mysql://localhost:3306/content_center?useUnicode=true&amp;characterEncoding=utf-8"
                         userId="root"
                         password="923469an">
         </jdbcConnection>
@@ -41,8 +41,11 @@
         <!-- <generatedKey column="id" sqlStatement="select SEQ_{1}.nextval from dual" identity="false" type="pre"/> -->
 
         <!-- tableName：數據庫表名，domainObjectName：生成文檔名 ，schema：數據源-->
+        <table tableName="article_sub_ref" domainObjectName=""/>
         <table tableName="c_article_count" domainObjectName=""/>
         <table tableName="c_articles" domainObjectName=""/>
+        <table tableName="c_likes" domainObjectName=""/>
+        <table tableName="c_shareds" domainObjectName=""/>
         <table tableName="c_subjects" domainObjectName=""/>
     </context>
 </generatorConfiguration>
