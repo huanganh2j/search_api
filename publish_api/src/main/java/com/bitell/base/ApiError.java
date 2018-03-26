@@ -18,13 +18,13 @@ public class ApiError {
     public static final int OK=100;
     public static final String OK_MESSAGE="成功";
 
-    //-------------------------新增相关错误码-----------------100-130
+    //-------------------------主题相关错误码-----------------100-130
     public static final int ADD_FAILD = 101;   //新增失败
     public static final String ADD_FAILD_MESSAGE = "新增失败";   //新增失败
-    public static final int USER_NOT_EXIST = 102;   //用户不存在，请先注册
-    public static final String USER_NOT_EXIST_MESSAGE = "用户不存在，请先注册";   //用户不存在，请先注册
-    public static final int USER_NOT_LOGGED = 103;   //用户尚未登录，身份验证失败
-    public static final String USER_NOT_LOGGED_MESSAGE = "用户尚未登录，身份验证失败";   //用户尚未登录，身份验证失败
+    public static final int UPDATE_FAILD = 102;   //修改主题失败
+    public static final String UPDATE_FAILD_MESSAGE = "修改主题失败";   //用户不存在，请先注册
+    public static final int DELETE_FAILD = 103;   //删除失败
+    public static final String DELETE_FAILD_MESSAGE = "删除失败";   //删除失败
     public static final int INCORRECT_AUTHENTICATION_CODE = 104;   //身份验证码不正确，请重新登录
     public static final String INCORRECT_AUTHENTICATION_CODE_MESSAGE= "身份验证码不正确，请重新登录";   //身份验证码不正确，请重新登录
     public static final int REFRESHTOKEN_IS_NULL = 105;   //刷新秘钥为空,刷新失败

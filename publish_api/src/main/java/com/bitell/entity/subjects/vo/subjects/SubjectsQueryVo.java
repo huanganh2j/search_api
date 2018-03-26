@@ -1,6 +1,9 @@
 package com.bitell.entity.subjects.vo.subjects;
 
+import com.bitell.model.CSubjects;
 import io.swagger.annotations.ApiModelProperty;
+
+import java.util.Date;
 
 /**
 *  @author an.huang 
@@ -19,6 +22,8 @@ public class SubjectsQueryVo {
     private Integer subAdmin;
     @ApiModelProperty(value = "创建人id")
     private Integer createUser;
+    @ApiModelProperty(value = "创建时间")
+    private Date createTime;
 
     public Integer getId() {
         return id;
@@ -66,5 +71,13 @@ public class SubjectsQueryVo {
 
     public void setCreateUser(Integer createUser) {
         this.createUser = createUser;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
     }
 }

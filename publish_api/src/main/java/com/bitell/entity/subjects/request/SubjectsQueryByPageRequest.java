@@ -1,13 +1,16 @@
 package com.bitell.entity.subjects.request;
 
 import com.bitell.base.ApiRequest;
+import io.swagger.annotations.ApiModelProperty;
 
 /**
 *  @author an.huang
 * @date 2018/3/26 19:36
 */
 public class SubjectsQueryByPageRequest extends ApiRequest{
+    @ApiModelProperty(value = "分页参数，每页数据量")
     private Integer pageSize;
+    @ApiModelProperty(value = "分页参数，当前页码")
     private Integer pageNum;
 
     public Integer getPageSize() {

@@ -1,8 +1,6 @@
 package com.bitell.service.subjects;
 
-import com.bitell.entity.subjects.request.SubjectsAddRequest;
-import com.bitell.entity.subjects.request.SubjectsQueryByIdRequest;
-import com.bitell.entity.subjects.request.SubjectsQueryByPageRequest;
+import com.bitell.entity.subjects.request.*;
 import com.bitell.entity.subjects.response.*;
 
 /**
@@ -26,7 +24,7 @@ public interface SubjectsServiceI {
     * @author an.huang
     * @date 2018/3/26 19:29
     */
-    public SubjectsUpdateResponse updateSubjects(SubjectsUpdateResponse subjectsUpdateResponse)throws Exception;
+    public SubjectsUpdateResponse updateSubjects(SubjectsUpdateRequest subjectsUpdateRequest)throws Exception;
 
 
     /**
@@ -48,6 +46,14 @@ public interface SubjectsServiceI {
     */
     public SubjectsQueryByPageResponse queryByPage(SubjectsQueryByPageRequest subjectsQueryByPageRequest);
 
+    /**
+     * 删除主题
+    * @param:
+    * @return
+    * @author an.huang
+    * @date 2018/3/26 21:09
+    */
+    public SubjectsDeleteResponse deleteSubjects(SubjectsDeleteRequest subjectsDeleteRequest)throws Exception;
 
     /**
      * 查询所有主题
@@ -57,4 +63,5 @@ public interface SubjectsServiceI {
     * @date 2018/3/26 19:42
     */
     public SubjectsQueryAllResponse queryAll();
+
 }
