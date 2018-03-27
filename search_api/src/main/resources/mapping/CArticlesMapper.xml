@@ -630,4 +630,30 @@ FROM
 WHERE
 	a.is_delete = 0 order by a.pub_time desc
   </select>
+
+  <select id="selectById" parameterType="Long" resultMap="PageResult">
+    SELECT
+    a.id,
+    a.author_id,
+    a.author_type,
+    a.content_text,
+    a.cover_img1_url,
+    a.cover_img2_url,
+    a.cover_img3_url,
+    a.cover_img4_url,
+    a.cover_img5_url,
+    a.cover_img6_url,
+    a.cover_img7_url,
+    a.cover_img8_url,
+    a.cover_img9_url,
+    a.create_time,
+    a.pub_time,
+    a.source_url,
+    a.title,
+    a.video_url
+    FROM
+    c_articles a
+    WHERE
+    a.id = #{id,jdbcType=BIGINT}
+  </select>
 </mapper>

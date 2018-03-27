@@ -129,4 +129,12 @@ public interface CArticlesMapper {
     * Date:2018/3/27
     */
     List<ArticlesQueryVo> selectByPage(Map<String,Object> map);
+
+    /**
+     * 根据id查询文章内容
+    * Author:an.huang
+    * Descriptions:
+    * Date:2018/3/27
+    */
+    ArticlesQueryVo selectById(Long id);
 }
