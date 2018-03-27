@@ -20,7 +20,7 @@ import java.net.UnknownHostException;
 * Author:an.huang
 * Date:2018/3/26
 */
-@Configuration
+//@Configuration
 public class ElasticsearchConfiguration implements FactoryBean<TransportClient>, InitializingBean, DisposableBean{
     private static final Logger logger = LoggerFactory.getLogger(ElasticsearchConfiguration.class);
     @Value("${spring.data.elasticsearch.cluster-nodes}")
