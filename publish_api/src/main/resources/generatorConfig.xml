@@ -41,6 +41,6 @@
         <!-- <generatedKey column="id" sqlStatement="select SEQ_{1}.nextval from dual" identity="false" type="pre"/> -->
 
         <!-- tableName：數據庫表名，domainObjectName：生成文檔名 ，schema：數據源-->
-        <table tableName="c_subjects" domainObjectName=""/>
+        <table tableName="c_articles" domainObjectName=""/>
     </context>
 </generatorConfiguration>

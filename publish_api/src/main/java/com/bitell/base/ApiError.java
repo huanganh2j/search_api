@@ -38,9 +38,9 @@ public class ApiError {
 
 
 
-    //----------------------------注册错误码  --------131-150
-    public static final int PHONENUMBER_IS_NULL = 131;   //手机号码不能为空
-    public static final String PHONENUMBER_IS_NULL_MESSAGE = "手机号码不能为空";   //手机号码不能为空
+    //----------------------------文章相关错误码  --------131-150
+    public static final int SUBJECTIDS_IS_NULL = 131;   //主题id不能为空
+    public static final String SUBJECTIDS_IS_NULL_MESSAGE = "主题id不能为空";   //手机号码不能为空
     public static final int PWD_IS_NULL = 132;   //密码不能为空
     public static final String PWD_IS_NULL_MESSAGE = "密码不能为空";   //密码不能为空
     public static final int REPETPWD_IS_NULL = 133;   //密码不能为空
