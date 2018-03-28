@@ -1,9 +1,10 @@
 package com.bitell.entity.article.request;
 
 import com.bitell.base.ApiRequest;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModelProperty;
 
-import java.util.Date;
+import java.sql.Date;
 import java.util.List;
 
 /**
@@ -22,6 +23,7 @@ public class ArticlePublishRequest extends ApiRequest{
 //    @ApiModelProperty(value = "文章标题")
 //    private Byte isDelete;
 //    private Date createTime;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @ApiModelProperty(value = "发布时间")
     private Date pubTime;
 
