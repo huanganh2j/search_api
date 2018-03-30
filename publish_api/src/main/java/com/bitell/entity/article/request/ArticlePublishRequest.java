@@ -64,6 +64,8 @@ public class ArticlePublishRequest extends ApiRequest{
     @ApiModelProperty(value = "文章所属主题id集")
     List<Integer> subjectIds;
 
+    @ApiModelProperty(value = "转发标识 1转发 2被转发")
+    private Integer fowardFalge;
     public Integer getAuthorId() {
         return authorId;
     }
@@ -199,5 +201,13 @@ public class ArticlePublishRequest extends ApiRequest{
 
     public void setCoverImg9Url(String coverImg9Url) {
         this.coverImg9Url = coverImg9Url;
+    }
+
+    public Integer getFowardFalge() {
+        return fowardFalge;
+    }
+
+    public void setFowardFalge(Integer fowardFalge) {
+        this.fowardFalge = fowardFalge;
     }
 }

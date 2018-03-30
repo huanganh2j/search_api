@@ -41,8 +41,8 @@ public class ApiError {
     //----------------------------文章相关错误码  --------131-150
     public static final int SUBJECTIDS_IS_NULL = 131;   //主题id不能为空
     public static final String SUBJECTIDS_IS_NULL_MESSAGE = "主题id不能为空";   //手机号码不能为空
-    public static final int PWD_IS_NULL = 132;   //密码不能为空
-    public static final String PWD_IS_NULL_MESSAGE = "密码不能为空";   //密码不能为空
+    public static final int PARAM_ERROR = 132;   //参数错误
+    public static final String PARAM_ERROR_MESSAGE = "参数错误";   //参数错误
     public static final int REPETPWD_IS_NULL = 133;   //密码不能为空
     public static final String REPETPWD_IS_NULL_MESSAGE = "密码不能为空";   //密码不能为空
     public static final int TWICE_DIFFRENT = 134;   //两次密码不一致
