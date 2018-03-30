@@ -51,6 +51,10 @@ public class ArticlesQueryVo {
     private List<AritcleSubRefVo> aritcleSubRefVos;
     @ApiModelProperty(value = "文章点赞、评论、分享数据对象")
     private AritcleCountVo aritcleCountVo;
+    @ApiModelProperty(value = "转发的文章对象")
+    private ArticlesQueryVo fowardArticle;
+
+    private Long forwardId;
 
     public Long getId() {
         return id;
@@ -212,5 +216,19 @@ public class ArticlesQueryVo {
         this.aritcleCountVo = aritcleCountVo;
     }
 
+    public ArticlesQueryVo getFowardArticle() {
+        return fowardArticle;
+    }
 
+    public void setFowardArticle(ArticlesQueryVo fowardArticle) {
+        this.fowardArticle = fowardArticle;
+    }
+
+    public Long getForwardId() {
+        return forwardId;
+    }
+
+    public void setForwardId(Long forwardId) {
+        this.forwardId = forwardId;
+    }
 }
