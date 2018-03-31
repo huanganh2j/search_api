@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 /**
-* Company:千山健康
+* Company:bitell
 * Author:an.huang
 * Date:2018/1/19
 */

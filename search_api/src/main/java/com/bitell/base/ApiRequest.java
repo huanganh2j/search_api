@@ -7,7 +7,7 @@ import io.swagger.annotations.ApiModelProperty;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
 /**
-* Company:千山健康
+* Company:bitell
 * Author:an.huang
 * Date:2018/1/25
 */

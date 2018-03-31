@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
-* Company:千山健康
+* Company:bitell
 * Author:an.huang
 * Date:2018/3/26
 */

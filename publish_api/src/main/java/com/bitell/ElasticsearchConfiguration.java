@@ -16,7 +16,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 /**
-* Company:千山健康
+* Company:bitell
 * Author:an.huang
 * Date:2018/3/26
 */

@@ -4,7 +4,7 @@ import com.bitell.base.ApiRequest;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
-* Company:千山健康
+* Company:bitell
 * Author:an.huang
 * Date:2018/3/27
 */
