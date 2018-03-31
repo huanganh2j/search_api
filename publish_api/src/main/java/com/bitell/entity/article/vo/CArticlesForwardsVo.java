@@ -10,10 +10,10 @@ import java.sql.Date;
 * @date 2018/3/31 13:59
 */ 
 public class CArticlesForwardsVo {
-    @ApiModelProperty(value = "文章id")
-    private Integer articlesId;
+//    @ApiModelProperty(value = "文章id")
+//    private Integer articlesId;
     @ApiModelProperty(value = "发布人")
-    private String author_name;
+    private String authorName;
     @ApiModelProperty(value = "文章标题")
     private String title;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
@@ -54,20 +54,21 @@ public class CArticlesForwardsVo {
     @ApiModelProperty(value = "带样式的文章内容")
     private String contentText;
 
-    public Integer getArticlesId() {
-        return articlesId;
+//    public Integer getArticlesId() {
+//        return articlesId;
+//    }
+//
+//    public void setArticlesId(Integer articlesId) {
+//        this.articlesId = articlesId;
+//    }
+
+
+    public String getAuthorName() {
+        return authorName;
     }
 
-    public void setArticlesId(Integer articlesId) {
-        this.articlesId = articlesId;
-    }
-
-    public String getAuthor_name() {
-        return author_name;
-    }
-
-    public void setAuthor_name(String author_name) {
-        this.author_name = author_name;
+    public void setAuthorName(String authorName) {
+        this.authorName = authorName;
     }
 
     public String getTitle() {
