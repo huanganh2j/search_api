@@ -1,82 +1,79 @@
 package com.bitell.entity.articles.vo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModelProperty;
 
 import java.util.Date;
-import java.util.List;
+
 
 /**
-* Company:千山健康
-* Author:an.huang
-* Date:2018/3/27
-*/
-public class ArticlesQueryVo {
+*  @author an.huang 
+* @date 2018/3/31 13:59
+*/ 
+public class CArticlesForwardsVo {
     @ApiModelProperty(value = "文章id")
+    private Long articlesId;
+    @ApiModelProperty(value = "转发文章id")
     private Long id;
-    @ApiModelProperty(value = "作者的用户id")
-    private Integer authorId;
-    @ApiModelProperty(value = "作者的用户类型。n:normal普通用户；v:vip认证用户")
-    private String authorType;
+    @ApiModelProperty(value = "发布人")
+    private String authorName;
     @ApiModelProperty(value = "文章标题")
     private String title;
-    @ApiModelProperty(value = "文章创建时间")
-    private Date createTime;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @ApiModelProperty(value = "发布时间")
     private Date pubTime;
+
     @ApiModelProperty(value = "封面图1")
     private String coverImg1Url;
+
     @ApiModelProperty(value = "封面图2")
     private String coverImg2Url;
+
     @ApiModelProperty(value = "封面图3")
     private String coverImg3Url;
+
     @ApiModelProperty(value = "封面图4")
     private String coverImg4Url;
+
     @ApiModelProperty(value = "封面图5")
     private String coverImg5Url;
+
     @ApiModelProperty(value = "封面图6")
     private String coverImg6Url;
+
     @ApiModelProperty(value = "封面图7")
     private String coverImg7Url;
+
     @ApiModelProperty(value = "封面图8")
     private String coverImg8Url;
+
     @ApiModelProperty(value = "封面图9")
     private String coverImg9Url;
+
     @ApiModelProperty(value = "封面视频url")
     private String videoUrl;
     @ApiModelProperty(value = "源数据的url")
     private String sourceUrl;
     @ApiModelProperty(value = "带样式的文章内容")
     private String contentText;
-    @ApiModelProperty(value = "文章主题对象")
-    private List<AritcleSubRefVo> aritcleSubRefVos;
-    @ApiModelProperty(value = "文章点赞、评论、分享数据对象")
-    private AritcleCountVo aritcleCountVo;
-    @ApiModelProperty(value = "转发的文章对象")
-    private CArticlesForwardsVo fowardArticle;
 
+    private Byte isDelete;
 
-    public Long getId() {
-        return id;
+    private java.util.Date createTime;
+    public Long getArticlesId() {
+        return articlesId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setArticlesId(Long articlesId) {
+        this.articlesId = articlesId;
     }
 
-    public Integer getAuthorId() {
-        return authorId;
+    public String getAuthorName() {
+        return authorName;
     }
 
-    public void setAuthorId(Integer authorId) {
-        this.authorId = authorId;
-    }
-
-    public String getAuthorType() {
-        return authorType;
-    }
-
-    public void setAuthorType(String authorType) {
-        this.authorType = authorType;
+    public void setAuthorName(String authorName) {
+        this.authorName = authorName;
     }
 
     public String getTitle() {
@@ -85,14 +82,6 @@ public class ArticlesQueryVo {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
     }
 
     public Date getPubTime() {
@@ -199,29 +188,27 @@ public class ArticlesQueryVo {
         this.contentText = contentText;
     }
 
-    public List<AritcleSubRefVo> getAritcleSubRefVos() {
-        return aritcleSubRefVos;
+    public Long getId() {
+        return id;
     }
 
-    public void setAritcleSubRefVos(List<AritcleSubRefVo> aritcleSubRefVos) {
-        this.aritcleSubRefVos = aritcleSubRefVos;
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    public AritcleCountVo getAritcleCountVo() {
-        return aritcleCountVo;
+    public Byte getIsDelete() {
+        return isDelete;
     }
 
-    public void setAritcleCountVo(AritcleCountVo aritcleCountVo) {
-        this.aritcleCountVo = aritcleCountVo;
+    public void setIsDelete(Byte isDelete) {
+        this.isDelete = isDelete;
     }
 
-    public CArticlesForwardsVo getFowardArticle() {
-        return fowardArticle;
+    public java.util.Date getCreateTime() {
+        return createTime;
     }
 
-    public void setFowardArticle(CArticlesForwardsVo fowardArticle) {
-        this.fowardArticle = fowardArticle;
+    public void setCreateTime(java.util.Date createTime) {
+        this.createTime = createTime;
     }
-
-
 }
