@@ -1,27 +1,21 @@
-package com.bitell.entity.article.request;
+package com.bitell.entity.article.vo;
 
-import com.bitell.base.ApiRequest;
-import com.bitell.entity.article.vo.CArticlesForwardsVo;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModelProperty;
 
 import java.sql.Date;
-import java.util.List;
 
 /**
 *  @author an.huang 
-* @date 2018/3/30 20:31
+* @date 2018/3/31 13:59
 */ 
-public class ArticleRelatedPublishRequest extends ApiRequest{
-    @ApiModelProperty(value = "作者的用户id")
-    private Integer authorId;
-    @ApiModelProperty(value = "作者的用户类型。n:normal普通用户；v:vip认证用户")
-    private String authorType;
+public class CArticlesForwardsVo {
+    @ApiModelProperty(value = "文章id")
+    private Integer articlesId;
+    @ApiModelProperty(value = "发布人")
+    private String author_name;
     @ApiModelProperty(value = "文章标题")
     private String title;
-    //    @ApiModelProperty(value = "文章标题")
-//    private Byte isDelete;
-//    private Date createTime;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @ApiModelProperty(value = "发布时间")
     private Date pubTime;
@@ -60,25 +54,20 @@ public class ArticleRelatedPublishRequest extends ApiRequest{
     @ApiModelProperty(value = "带样式的文章内容")
     private String contentText;
 
-    @ApiModelProperty(value = "文章所属主题id集")
-    List<Integer> subjectIds;
-    @ApiModelProperty(value = "转发文章对象")
-    private CArticlesForwardsVo cArticlesForwards;
-
-    public Integer getAuthorId() {
-        return authorId;
+    public Integer getArticlesId() {
+        return articlesId;
     }
 
-    public void setAuthorId(Integer authorId) {
-        this.authorId = authorId;
+    public void setArticlesId(Integer articlesId) {
+        this.articlesId = articlesId;
     }
 
-    public String getAuthorType() {
-        return authorType;
+    public String getAuthor_name() {
+        return author_name;
     }
 
-    public void setAuthorType(String authorType) {
-        this.authorType = authorType;
+    public void setAuthor_name(String author_name) {
+        this.author_name = author_name;
     }
 
     public String getTitle() {
@@ -191,21 +180,5 @@ public class ArticleRelatedPublishRequest extends ApiRequest{
 
     public void setContentText(String contentText) {
         this.contentText = contentText;
-    }
-
-    public CArticlesForwardsVo getcArticlesForwards() {
-        return cArticlesForwards;
-    }
-
-    public void setcArticlesForwards(CArticlesForwardsVo cArticlesForwards) {
-        this.cArticlesForwards = cArticlesForwards;
-    }
-
-    public List<Integer> getSubjectIds() {
-        return subjectIds;
-    }
-
-    public void setSubjectIds(List<Integer> subjectIds) {
-        this.subjectIds = subjectIds;
     }
 }
