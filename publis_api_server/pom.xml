@@ -6,7 +6,7 @@
 	<groupId>com.ywxk.bitell</groupId>
 	<artifactId>publis_api_server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
+	<packaging>jar</packaging>
 
 	<name>publis_api_server</name>
 	<description>publis_api_server</description>
