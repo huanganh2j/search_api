@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.ywxk.bitell</groupId>
-	<artifactId>publis_api_server</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<artifactId>bitell-publis_api_server</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>publis_api_server</name>
